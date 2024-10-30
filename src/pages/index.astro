@@ -1,0 +1,25 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mohammed Hamza</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Mohammed Hamza</h1>
+      <p>Welcome to my portfolio!</p>
+      <ProjectCard title="Project 1" description="Description of project 1" link="https://example.com/project1" />
+      <ProjectCard title="Project 2" description="Description of project 2" link="https://example.com/project2" />
+    </main>
+    <Footer />
+  </body>
+</html>
