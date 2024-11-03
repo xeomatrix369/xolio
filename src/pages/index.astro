@@ -1,7 +1,10 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Body from '../components/Body.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import '../styles/globals.css'
+
 ---
 
 <html lang="en">
@@ -14,12 +17,8 @@ import ProjectCard from '../components/ProjectCard.astro';
   </head>
   <body>
     <Header />
-    <main>
-      <h1>Mohammed Hamza</h1>
-      <p>Welcome to my portfolio!</p>
-      <ProjectCard title="Project 1" description="Description of project 1" link="https://example.com/project1" />
-      <ProjectCard title="Project 2" description="Description of project 2" link="https://example.com/project2" />
-    </main>
+    <Body/>
     <Footer />
+    <a href="/about.astro">about</a>
   </body>
 </html>
